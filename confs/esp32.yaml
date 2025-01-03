@@ -10,12 +10,12 @@ esp32:
 uart:
   id: uart_ecodan
   rx_pin:
-    number: GPIO3
+    number: GPIO1
     mode:
       input: true
       # pullup: true
   tx_pin:
-    number: GPIO1
+    number: GPIO3
     mode:
       output: true
   baud_rate: 2400
