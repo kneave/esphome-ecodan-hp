@@ -35,18 +35,18 @@ api:
 #  wifi: !include confs/wifi.yaml
 
 external_components:
-  - source: github://gekkekoe/esphome-ecodan-hp@main
+  - source: github://kneave/esphome-ecodan-hp@main
     components: [ ecodan ]
     refresh: always
 
 packages:
   remote_package:
-    url: https://github.com/gekkekoe/esphome-ecodan-hp/
+    url: https://github.com/kneave/esphome-ecodan-hp/
     ref: main
     refresh: always
     files: [ 
             confs/base.yaml,        # required
-            confs/esp32s3.yaml,     # confs/esp32.yaml, for regular board
+            confs/esp32.yaml,     # confs/esp32.yaml, for regular board
             confs/zone1.yaml,
             ## enable if you want to use zone 2
             #confs/zone2.yaml,
