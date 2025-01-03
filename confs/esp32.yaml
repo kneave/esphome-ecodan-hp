@@ -1,5 +1,5 @@
 esp32:
-  board: esp32dev
+  board: esp32doit-devkit-v1
   framework:
     type: esp-idf
     version: recommended
@@ -10,12 +10,12 @@ esp32:
 uart:
   id: uart_ecodan
   rx_pin:
-    number: GPIO1
+    number: GPIO2
     mode:
       input: true
       # pullup: true
   tx_pin:
-    number: GPIO3
+    number: GPIO1
     mode:
       output: true
   baud_rate: 2400
